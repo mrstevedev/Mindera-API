@@ -1,5 +1,7 @@
 body {
     background:#f3f3f3;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
 }
 
 #results {
@@ -15,4 +17,8 @@ body {
     background: #fff;
     border-radius: 6px;
     box-shadow: 0px 1px 1px #ccc;
+}
+
+.row > div {
+    margin-bottom: 6px;
 }
