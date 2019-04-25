@@ -34,3 +34,15 @@ const showAPIData = humans => {
     results.appendChild(div);
   });
 };
+
+window.addEventListener('scroll', (e) => {
+    const header = document.querySelector('header');
+    const distanceY = window.pageYOffset;
+    const collapsePoint = 50;
+    console.log('scrolling...');
+    if(distanceY > collapsePoint) {
+      header.classList.remove('sticky-nav--visible')
+    } else {
+      header.classList.add('sticky-nav--visible')
+    }
+  })

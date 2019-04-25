@@ -1,13 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background:#f3f3f3;
     line-height: 24px;
     font-family: 'Helvetica Neue', 'Helvetica', 'Arial';
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    height: 65px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+.header {
+    pointer-events: all;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    z-index: 9001;
+  }
+  
+
+.header.sticky-nav {
+    opacity: 0;
+    position: fixed;
+    top: -200px;
+}
+
+.header.sticky-nav--visible {
+    opacity: 1;
+    top: 0;
+}
+
 #results {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 100px 0;
 }
 
 .image {
