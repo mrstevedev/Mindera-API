@@ -4,11 +4,16 @@
   "description": "Dummy API for card content",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/json-server --watch db.json"
+    "start": "./node_modules/.bin/json-server --watch db.json",
+    "test": "jest"
   },
   "author": "antoniocapelo",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "json-server": "^0.8.19"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
   }
 }
